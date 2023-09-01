@@ -1,0 +1,141 @@
+package day11;
+
+public class EzenComputer {
+//학생 정보 이름 생년월 나이 전번
+//학원 정보 학원이름 "EZEN", 지점
+//수강정보 수강과목, 기간(2023-08-16~2024-03-14)
+	
+//ex) 홍길동, 990101, 24, 010-1111-1111 학생정보출력 
+//EZEN 인천지점   학원정보 출력
+//자바(6개월), DB(1개월), html(2개월) 수강정보 출력
+	
+//기능 / 학생정보출력,학원정보출력,수강정보출력/ 학생의 수강정보를 추가하는 기능
+	
+	
+	
+	private String name;
+	private String birth, phone, branch = "";
+	private int age;
+	private int cnt =0;
+	public final static String company = "EZEN";
+	private String[] course = new String[5];
+	private String[] period = new String[5];
+	
+	public EzenComputer(String name,int age) {
+		this.name=name;
+		this.age=age;
+		
+	}
+	
+	void printStudent(){
+		System.out.print("이름 : "+name+" "+birth+" "+age+"세 "+phone+"\n");
+	}
+	void printAcademy() {
+		System.out.println(company+" "+branch+"지점");
+	}
+	void printCourse() {
+		for(int i=0;i<course.length;i++) {
+			System.out.print(course[i]+" "+period[i]+" ");
+			if(course[i]==null) {
+				System.out.println();
+				return;
+			}
+		}
+	}
+	
+	void addCourse(String co,String pe) {
+		this.course[cnt] = co;
+		this.period[cnt] = pe;
+		cnt++;
+	}
+	
+
+		
+	 	
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBirth() {
+		return birth;
+	}
+
+	public void setBirth(String birth) {
+		this.birth = birth;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getBranch() {
+		return branch;
+	}
+
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getCnt() {
+		return cnt;
+	}
+
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
+	}
+
+	public String[] getCourse() {
+		return course;
+	}
+
+	public void setCourse(String[] course) {
+		this.course = course;
+	}
+
+	public String[] getPeriod() {
+		return period;
+	}
+
+	public void setPeriod(String[] period) {
+		this.period = period;
+	}
+
+	public static String getCompany() {
+		return company;
+	}
+	
+	
+	
+	
+}

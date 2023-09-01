@@ -1,0 +1,27 @@
+package day08;
+
+import java.util.Scanner;
+
+public class 과제 {
+	Scanner sc = new Scanner(System.in);
+	
+	
+	public static void main(String[] args) {
+		// 야구게임
+		// 컴퓨터가 3자리 숫자 랜덤 생성(1~9까지) => 중복X
+		// user가 3자리 숫자 맞추는 게임
+		// 자리와 숫자가 일치하면 strike
+		// 숫자만 일치하면 ball, 없으면 out
+		// 3 5 7 ,  3 6 7  = 2s
+		// 3 5 7 ,  3 7 6  = 1s 1b
+		// 야구게임 시작
+		// 컴퓨터가 숫자를 정했습니다.
+		// 숫자 입력(1~9, 3자리) : 
+		// 3 4 5
+		// 결과 3s
+		
+		
+
+	}
+
+}

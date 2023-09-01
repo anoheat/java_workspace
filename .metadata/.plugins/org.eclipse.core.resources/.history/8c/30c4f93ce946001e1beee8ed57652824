@@ -1,0 +1,29 @@
+package day11;
+
+import java.util.Scanner;
+
+public class EzenComputerMain {
+
+	public static void main(String[] args) {
+		// EzenComputer의 객체 생성 후 출력
+		Scanner sc = new Scanner(System.in);
+		System.out.println("이름입력");
+		String name = sc.next();
+		System.out.println("나이 입력");
+		int age = sc.nextInt();
+		EzenComputer ez = new EzenComputer(name,age);
+		
+		
+		String[] course = new String[5];
+		String[] period = new String[5];
+		System.out.println("과정명 입력");
+		course[ez.getCnt()] = sc.next();
+		System.out.println("기간 입력 ex)n개월");
+		period[ez.getCnt()] = sc.next();
+		ez.setCourse(course);
+		ez.setPeriod(period);
+		
+
+	}
+
+}

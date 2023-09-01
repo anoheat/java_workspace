@@ -1,0 +1,54 @@
+package day10;
+
+public class Class03 {
+
+	public static void main(String[] args) {
+
+		Tv tv = new Tv();
+		tv.start();
+		tv.start();
+	}
+
+}
+
+class Tv{
+	private boolean power;
+	private int channel,volume;
+	
+	void start() {
+		power = (power ? false : true);
+		System.out.println("전원이 " + (power ? "켜집니다." : "꺼집니다."));
+	}
+
+	
+	
+	public boolean isPower() {
+		return power;
+	}
+
+	public void setPower(boolean power) {
+		this.power = power;
+	}
+
+	public int getChannel() {
+		return channel;
+	}
+
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+
+	public int getVolume() {
+		return volume;
+	}
+
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	
+}	
+	
+	
+	
+	
+	

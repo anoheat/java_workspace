@@ -1,0 +1,67 @@
+package day11;
+
+import java.util.Scanner;
+
+public class EzenComputerMain {
+
+	public static void main(String[] args) {
+		// EzenComputer의 객체 생성 후 출력
+		Scanner sc = new Scanner(System.in);
+		System.out.println("이름입력");
+		String name = sc.next();
+		System.out.println("나이 입력");
+		int age = sc.nextInt();
+		
+		
+		EzenComputer ez = new EzenComputer(name,age);
+				
+		String course; 
+		String period;
+	
+		for(int j=6;j>1;j--) {
+		System.out.println("과정명 입력");
+		course = sc.next();
+		System.out.println("기간 입력 ex)n개월");
+		period = sc.next();
+		ez.addCourse(course, period);
+		System.out.println("추가 입력? Y/N");
+		String tmp = sc.next();
+		if (tmp.equals("N")) break;
+		}
+		ez.printStudent();
+		ez.printCourse();
+		
+
+
+		
+//		ez.setCourse(course);
+//		ez.setPeriod(period);
+//		ez.printStudent();
+//		ez.printAcademy();
+//		ez.printCourse();
+//		
+//		System.out.println("과정명 추가 입력");
+//		course[ez.getCnt()] = sc.next();
+//		System.out.println("기간 입력 ex)n개월");
+//		period[ez.getCnt()] = sc.next();
+//		ez.setCnt(ez.getCnt()+1);
+//		
+//		
+//		
+
+	}
+
+}
+
+
+
+//학생클래스를 담을 수 있는 배열 생성 후
+//5명의 학생을 등록
+//학생 이름으로 검색 =>모든 정보 출력
+//지점 정보로 검색 =>학생 정보만 출력
+//과목 수강하는 학생만 검색=>학생정보,수강정보
+
+//String searchName = "홍길동";
+//String searchBranch="인천";
+//String searchCourse="java";
+

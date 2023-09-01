@@ -1,0 +1,63 @@
+package day09;
+
+public class 과제 {
+
+	public static void main(String[] args) {
+		// 클래스 객체 생성(2명)
+		Student s1 = new Student();
+		Student s2 = new Student();
+		s1.setName("김어쩌구");
+		s1.setAge(26);
+		s1.setPhoneNumber("01012345678");
+		s2.setName("박저쩌구");
+		s2.setAge(25);
+		s2.setPhoneNumber("01030141592");
+		s1.print();
+		s2.print();
+		
+		
+	}
+
+}
+
+//학생 ㅡㅋㄹ래스 생성
+// 
+class Student{
+	private String name,adress,phoneNumber;
+	private int age;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAdress() {
+		return adress;
+	}
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	void print() {
+		System.out.println(name+"("+age+") "+phoneNumber);
+	}
+	
+}
+
+
+
+//출력
+//이름(나이) 전화번호
